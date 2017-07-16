@@ -1,0 +1,32 @@
+.content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5px;
+}
+
+.paragraph {
+	height: auto;
+	p {
+		display: block;
+		text-align: left;
+		font-size: inherit;
+		word-wrap: break-word;
+	}
+}
+
+.headline {
+	height: auto;
+	span {
+		display: block;
+		text-align: center;
+	}
+}
+
+.label {
+	height: auto;
+	label {
+		display: block;
+		text-align: center;
+	}
+}

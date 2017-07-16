@@ -1,0 +1,68 @@
+#homeContainer{
+	height: 100%;
+	#homeLogoContainer{
+		width: 100%;
+		display: flex;
+		justify-content: flex-end;
+		padding: 20px;
+		.logo-container{
+			max-width: 125px;
+			margin-bottom: 10px;
+			@include smallWidth {
+				max-width: 75px;
+			}
+			@include mediumWidth {
+				max-width: 115px;
+			}
+		}
+		#menuHangContainer{
+			text-align: right;
+			.menu-item{
+
+			}
+		}
+	}
+	#homeMainHeadline{
+		display: flex;
+		justify-content: center;
+		height: 800px;
+		align-items: center;
+		@include smallWidth {
+			height: 300px;
+		}
+		#goodDesignContainer{
+
+			h1{
+				font-family: 'Heebo';
+				font-size: $hugeFont;
+				font-weight: 500;
+				display: inline-block;
+				letter-spacing: 2px;
+				@include smallWidth {
+					font-size: $midFont;
+					letter-spacing: 1px;
+				}
+				@include mediumWidth {
+					font-size: $bigFont;
+					letter-spacing: 1px;
+				}
+			}
+		}
+		#goodDesignAnswer{
+			display: inline-block;
+			color: $brandAccent;
+		}
+	}
+	#downButtonContainer{
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		text-align: center;
+		div{
+			cursor: pointer;
+			.material-icons{
+				font-size: 100px;
+			}
+		}
+	}
+}

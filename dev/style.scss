@@ -1,0 +1,123 @@
+$brandDark: #777777;
+$brandAccent: #c33f3f;
+$hugeFont: 60px;
+$bigFont: 40px;
+$largeFont: 32px;
+$midFont: 24px;
+$smFont: 16px;
+
+@mixin narrow {
+	@media(max-aspect-ratio: 7/8){
+		@content
+	}
+}
+@mixin wide {
+	@media(min-aspect-ratio: 7/8){
+		@content
+	}
+}
+@mixin squish {
+	@media(max-height: 500px){
+		@content
+	}
+}
+@mixin smallWidth {
+	@media(max-width: 500px){
+		@content
+	}
+}
+@mixin mediumWidth {
+	@media (max-width: 1400px) and (min-width:500px){
+		@content
+	}
+}
+
+@import "styles/reset", "styles/colors", "styles/layouts",  "styles/fontSizes", "styles/_imgStyles.scss", "styles/fontWeights",  "styles/fontFamilies", "styles/borders", "styles/shadows", "styles/positions", "styles/sizes", "styles/home", "styles/loader", "styles/_editPanel.scss", "styles/_container-classes.scss", "styles/_text-classes.scss";
+html, body {
+	height: 100%;
+	-webkit-font-smoothing: antialiased;
+    font-family: 'Heebo', sans-serif;
+	background-color: #fff;
+}
+*>*{
+	// font-family:'Heebo', sans-serif;
+}
+*{
+	box-sizing: border-box;
+}
+a, button{
+	cursor: pointer;
+}
+a:link,
+a:visited {
+	color: inherit;
+	text-decoration: inherit;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.invalid{
+	border: 5px solid red !important;
+}
+
+.hidden {
+	display: none !important;
+}
+
+.successful {
+	color: #2aa73a !important;
+}
+
+.active {
+	filter: brightness(110%) !important;
+	outline: 1px solid #2196F3;
+	p, span {
+		filter: contrast(80%) !important;
+	}
+}
+
+.seethru {
+	opacity: .27;
+	pointer-events: none;
+}
+
+p{
+	line-height: 1.75;
+}
+b {
+	font-weight: bolder;
+}
+#app{
+	display: block;
+	height: 100%;
+	@include smallWidth{
+		// font-size: 14px;
+	}
+}
+#godContainer{
+	display: block;
+	height: 100%;
+}
+.hoverOn {
+	outline: 2px solid #FFEB3B !important;
+	border: 2px solid #FFEB3B !important;
+	filter: brightness(110%) !important;
+	cursor: pointer;
+	p, span {
+		filter: contrast(80%) !important;
+	}
+}
+.blueBack {
+	background-color: blue;
+	color: #fff;
+}
+
+.go {
+	color: #4CAF50;
+}
+.stop {
+	color: #F61C3B;
+}

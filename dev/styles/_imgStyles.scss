@@ -1,0 +1,33 @@
+.img {
+	width: 100%;
+	height: 100%;
+	img {
+		width: 100%;
+		height: 100%;
+	}
+	// overflow: hidden;
+}
+
+.img_fit_cover {
+
+	img {
+		object-fit: cover;
+
+	}
+}
+
+.img_fit_contain {
+
+	img {
+		object-fit: contain;
+
+	}
+}
+
+.img_fit_fill {
+
+	img {
+		object-fit: fill;
+
+	}
+}

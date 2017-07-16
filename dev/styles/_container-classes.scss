@@ -1,0 +1,28 @@
+.container {
+	/*display: block;*/
+
+	padding: 10px;
+	flex-wrap: wrap;
+}
+
+.page {
+	height: auto;
+	width: 100%;
+	display: flex;
+	position: relative;
+	min-height: 100vh;
+	overflow: visible;
+}
+
+.section {
+	display: flex;
+	overflow: hidden;
+}
+
+.half-screen {
+	height: 50vh;
+}
+
+.full-screen {
+	// height: 100vh;
+}
