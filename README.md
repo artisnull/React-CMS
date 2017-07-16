@@ -2,6 +2,8 @@
 Work in progress page creator using ReactJS and Redux
 ####################################################
 
+Test it out here: https://artisnull.github.io/React-CMS/
+
 Notes and Instructions:
 
 Start with a page
