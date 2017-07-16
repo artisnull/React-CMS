@@ -1,6 +1,7 @@
 # React-CMS
 Work in progress page creator using ReactJS and Redux
 ####################################################
+
 Notes and Instructions:
 
 Add an element by clicking the add button in the bottom left-hand corner
